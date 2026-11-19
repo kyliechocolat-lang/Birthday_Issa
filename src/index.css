@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --bg-pink: #ffeaf4;
+  --bg-dot: #ffd1e8;
+  --card-bg: #fff5fa;
+  --pink-main: #ff69b4;
+  --pink-dark: #d63384;
+  --pink-border: #ff8ec7;
+  --pink-light: #ffc2e2;
+  --text-dark: #5c2240;
+  --shadow: #e06ca7;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Press Start 2P', monospace;
+  color: var(--text-dark);
+  background-color: var(--bg-pink);
+  background-image:
+    radial-gradient(var(--bg-dot) 20%, transparent 20%),
+    radial-gradient(var(--bg-dot) 20%, transparent 20%);
+  background-position: 0 0, 12px 12px;
+  background-size: 24px 24px;
+}
+
+.font-pixel {
+  font-family: 'Press Start 2P', monospace;
+}
+
+.font-vt {
+  font-family: 'VT323', monospace;
+}
+
+canvas {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.96);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-pop-in {
+  animation: popIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-pop-in {
+    animation: none;
+  }
+}

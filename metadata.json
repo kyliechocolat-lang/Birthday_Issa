@@ -1,0 +1,6 @@
+{
+  "name": "Bestie Pixel World",
+  "description": "A 7-page animated pixel-art bestie arcade featuring a chibi character, pets, gift box, memory game, claw machine, pet care, heart catcher, and bestie quiz.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
